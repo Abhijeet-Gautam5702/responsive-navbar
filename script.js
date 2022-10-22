@@ -1,18 +1,17 @@
 let isRotated = false;
 const menuBtn = document.getElementById("menu-icon");
 const ulEl = document.getElementsByTagName("ul");
+const ulStyle = ulEl[0].style;
 // console.log(ulEl[0].style.display);
 
 menuBtn.addEventListener("click", function () {
   menuBtn.style.transition = "0.2s";
-  ulEl[0].style.transition = "2.4s";
   if (isRotated === false) {
     menuBtn.style.transform = "rotate(90deg)";
-    ulEl[0].style.display = "block";
+    ulStyle.display = "flex";
     isRotated = true;
   } else {
     menuBtn.style.transform = "rotate(0deg)";
-    // ulEl[0].style.display = "none";
     isRotated = false;
   }
 });
