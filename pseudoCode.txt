@@ -1,0 +1,23 @@
+PSEUDO-CODE FOR FUTURE REFERENCE
+
+1. MENU-ICON ::> The menu icon appears only when screen size is small. So fix its position and hide it. Keep the div-element containing the menu-icon outside the regular navbar.
+
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    display:none;
+
+2. OVERFLOW PROPERTY OF NAVBAR ::> Set overflow property using javascript only.
+
+    const navbar = document.getElementById("navbar)
+    navbar.style.overflow = "hidden"
+
+3. NAVBAR HEIGHT ::> When screen is small, toggle buttons will appear below the actual navbar. Set the navbar height using javascript.
+
+    if(//menu button clicked for opening){
+        navbar.style.height = "fit-content"
+    }
+    else (//menu button clicked again for closing){
+        navbar.style.height = `original height`
+    }
+    
