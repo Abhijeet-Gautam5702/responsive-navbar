@@ -13,6 +13,7 @@ menuBtn.addEventListener("click", function () {
     menuBtn.style.transform = "rotate(90deg)";
     navEl.style.removeProperty("overflow");
     navEl.style.height = "fit-content";
+
     isRotated = true;
   } else {
     menuBtn.style.transform = "rotate(0deg)";
